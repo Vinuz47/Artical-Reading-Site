@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Artical-Web</title>
+        <!-- font awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <header>
+            <!-- add logo also here!!!!! -->
+            <div class="inputSearch desktop">
+                <form id="searchForm">
+                    <input type="text" placeholder="Type to search..."
+                        id="searchInput">
+                    <span>
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                </form>
+
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li onclick="Search('ipl')">IPL 2023</li>
+                    <li onclick="Search('tech')">Tech</li>
+                    <li onclick="Search('food')">Food</li>
+                    <li onclick="Search('movies')">Movies</li>
+                    <li onclick="Search('business')">Business</li>
+                </ul>
+            </nav>
+
+            <div class="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="mobile hidden">
+                <nav>
+                    <ul>
+                        <li onclick="Search('ipl')">IPL 2023</li>
+                        <li onclick="Search('tech')">Tech</li>
+                        <li onclick="Search('food')">Food</li>
+                        <li onclick="Search('movies')">Movies</li>
+                        <li onclick="Search('business')">Business</li>
+                    </ul>
+                </nav>
+                <div class="inputSearch">
+                    <form id="searchFormMobile">
+                        <input type="text" placeholder="Type to search..."
+                            id="searchInputMobile">
+                        <span>
+                            <i class="fa-solid fa-search"></i>
+                        </span>
+                    </form>
+
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
